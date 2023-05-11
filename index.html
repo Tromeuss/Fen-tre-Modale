@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/7f4a060668.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+    <title>Modal</title>
+</head>
+<body>
+    
+
+    <a class="btn" href="#modal">Ouvrir</a> <!--bouton qui ouvre le modal le href doit avoir le meme nom que l'id -->
+
+    <aside id="modal" class="modall" aria-hidden="true" role="dialog" aria-modal="false" aria-label="titreBonjour" style="display:none"> <!--setup du modal -->
+        <div class="modal_wrapper js_stop ">
+            <div class="cont_fermer">
+                <i class="js_close fa-regular fa-circle-xmark fa-beat"></i>
+            </div>
+            <h1 id="titreBonjour">Nous respectons votre vie privée !</h1>
+            <p class="cookie">Ce site web utilise des cookies pour vous offrir une expérience plus sûre et personnalisée. En acceptant, vous acceptez l'utilisation des cookies pour la publicité et l'analyse, conformément à notre <em>Politique en matière de cookies.</em> </p>
+            <div class="cont">
+                <button class="acc">Accepter</button>
+                <button class="pers">personnaliser</button>
+            </div>
+        </div>  
+    </aside>
+
+
+
+
+
+</body>
+</html>

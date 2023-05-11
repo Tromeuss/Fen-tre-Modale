@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 3em;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 8px #042632;
+    margin: 20px;
+}
+
+.btn:focus {
+    box-shadow: 0 4px #042632;
+}
+
+.modall {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal_wrapper {
+    width: 600px;
+    background-color: #fff;
+    padding: 40px;
+    max-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 3px solid rgb(82, 82, 241);
+}
+
+#titreBonjour {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(82, 82, 241);
+}
+
+.cookie {
+    margin-bottom: 20px;
+    
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.acc {
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 1.3em;
+    box-shadow: 0 2px rgb(82, 82, 241);
+    border: 2px solid rgb(82, 82, 241);
+    color: rgb(82, 82, 241);
+}
+
+.pers {
+
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 1.3em;
+    box-shadow: 0 2px rgb(82, 82, 241);
+    border: 2px solid rgb(82, 82, 241);
+    color: rgb(82, 82, 241);
+}
+
+em {
+    text-decoration: underline;
+    color: rgb(82, 82, 241);
+}   
+
+.cont_fermer {
+    display: flex;
+    justify-content: end;
+}
+
+.fa-regular::before {
+    font-size: 3em; 
+    position: absolute;
+    top: -65px;
+    left: 10px;
+    color: rgb(82, 82, 241);
+}
