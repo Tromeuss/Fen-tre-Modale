@@ -1,9 +1,4 @@
 
-
-
-
-
-
 let modal = null
 
 

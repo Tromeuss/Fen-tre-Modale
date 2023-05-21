@@ -30,7 +30,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.4);
+    animation: fadeIn .3s both;
 }
 
 .modal_wrapper {
@@ -41,13 +42,14 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    border: 3px solid rgb(82, 82, 241);
+    border: 3px solid rgb(44, 44, 46);
+    animation: slideFromTop .3s both .1s;
 }
 
 #titreBonjour {
     font-size: 2em;
     margin-bottom: 20px;
-    color: rgb(82, 82, 241);
+    color: rgb(44, 44, 46);
 }
 
 .cookie {
@@ -70,9 +72,9 @@ body {
     border-radius: 10px;
     margin-right: 10px;
     font-size: 1.3em;
-    box-shadow: 0 2px rgb(82, 82, 241);
-    border: 2px solid rgb(82, 82, 241);
-    color: rgb(82, 82, 241);
+    box-shadow: 0 2px rgb(44, 44, 46);
+    border: 2px solid rgb(44, 44, 46);
+    color: rgb(44, 44, 46);
 }
 
 .pers {
@@ -85,14 +87,14 @@ body {
     border-radius: 10px;
     margin-left: 10px;
     font-size: 1.3em;
-    box-shadow: 0 2px rgb(82, 82, 241);
-    border: 2px solid rgb(82, 82, 241);
-    color: rgb(82, 82, 241);
+    box-shadow: 0 2px rgb(44, 44, 46);
+    border: 2px solid rgb(44, 44, 46);
+    color: rgb(44, 44, 46);
 }
 
 em {
     text-decoration: underline;
-    color: rgb(82, 82, 241);
+    color: rgb(44, 44, 46);
 }   
 
 .cont_fermer {
@@ -103,7 +105,20 @@ em {
 .fa-regular::before {
     font-size: 3em; 
     position: absolute;
-    top: -65px;
-    left: 10px;
-    color: rgb(82, 82, 241);
+    top: 5px;
+    left: 540px;
+    color: rgb(44, 44, 46);
+}
+
+
+@keyframes fadeIn {
+    from {  opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+@keyframes slideFromTop {
+    from {transform: translateY(-50px);}
+    to {transform: translateY(0px);}
 }
